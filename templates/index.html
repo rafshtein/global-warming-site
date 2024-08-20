@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глобальное потепление</title>
+    <link rel="stylesheet" href="static\css\style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Глобальное потепление</h1> 
+        <div class="space_width"></div>
+        <nav>
+            <a href="#vehicle">транспорт</a>
+            <a href="#tip">совет</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        <article class="banner">
+            <h1>Как мы можем повлиять на глобальное потепление?</h1>
+
+        </article>
+        
+        <article class="post" id="vehicle">
+            <p>
+                Большинство автомобилей, грузовиков, кораблей и самолетов 
+                работают на ископаемых видах топлива. Это делает транспорт 
+                одним из главных источников выбросов парниковых газов, особенно 
+                выбросов углекислого газа.
+            </p>
+            
+            <img src="static\img\cars.jpeg">
+        </article>
+        <div class="space_height"></div>
+        <article class="post" id="tip">
+            <img src="static\img\smoke.jpg">
+            <p>
+                Выбор средств передвижения в городе оказывает заметное 
+                воздействие на уровень выбросов парниковых газов. Вы можете 
+                отказаться от личной автомашины в пользу ходьбы, езды на 
+                велосипеде или общественного транспорта.
+            </p>
+
+        </article>
+        <article id="final">
+            <div>
+                <a href="{{ url_for('form') }}">обратная связь</a>
+            </div>
+        </article>
+        
+        {% endblock %}
+    </main>
+    
+</body>
+</html>

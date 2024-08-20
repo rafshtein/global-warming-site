@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Глобальное потепление</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__text">
+      <h1>Глобальное потепление</h1>
+      
+    </div>
+    </header>
+    {% block content %}
+    <div class="form__title">
+    <h1> Спасибо за заполнение формы</h1>
+    </div>
+    <div class="form__res">
+    <p> Ваше имя: {{name}}</p>
+    <p> Ваша електронная форма: {{email}}</p>
+    <p> Ваш адрес: {{address}}</p>
+    <p> Ваше сообщение: {{text}}</p>
+    </div>
+
+    {% endblock %}
+</body>
+</html>
